@@ -14,7 +14,7 @@
       body {
         font-family: sans-serif;
         color: #343a40;
-        font: size 24px;
+        font-size: 24px;
         height: 100vh;
         display: grid;
         grid-template-columns: 80px 400px 1fr 250px;
@@ -23,7 +23,6 @@
         font-weight: bold;
       }
       nav,
-      menu,
       section,
       main,
       aside {
@@ -38,14 +37,25 @@
       menu {
         background-color: #7048e8;
         grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
       }
+
       button {
-        font: size 16px;
+        font-size: 16px;
         background-color: #5f3dc4;
+        font-weight: bold;
+        display: inline-block;
         border: none;
         cursor: pointer;
         color: #fff;
         padding: 8px 12px;
+      }
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
       }
       section {
         background-color: #e9ecef;
