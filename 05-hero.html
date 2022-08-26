@@ -12,9 +12,19 @@
     />
     <title>Omnifood Hero section</title>
     <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
       html {
         font-family: "Rubik", sans-serif;
         color: #444;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
       }
 
       nav {
@@ -43,30 +53,34 @@
         padding: 16px 32px;
         border-radius: 9px;
       }
+      h2 {
+        font: size 44px;
+        margin: bottom 48px;
+      }
+      section {
+        padding: 96px 0;
+      }
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
 
-      <div>
-        <div>
-          <h1>A healty meal delivered to your door, every single day</h1>
-          <p>
-            The smart 365-days-per-year food subscription that will make you eat
-            healty algain. Tailored to your personal tastes and nutritional
-            needs
-          </p>
-          <a href="#" class="btn">Start eating well</a>
-        </div>
+      <div class="container">
+        <h1>A healty meal delivered to your door, every single day</h1>
+        <p>
+          The smart 365-days-per-year food subscription that will make you eat
+          healty algain. Tailored to your personal tastes and nutritional needs
+        </p>
+        <a href="#" class="btn">Start eating well</a>
       </div>
     </header>
 
     <section>
-      <div>
+      <div class="container">
         <h2>Some random heading</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe
