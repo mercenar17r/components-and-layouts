@@ -27,6 +27,8 @@
         width: 1200px;
       }
       header {
+        background-color: orangered;
+        position: relative;
         height: 100vh;
       }
 
@@ -36,8 +38,23 @@
         display: flex;
         justify-content: space-between;
       }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /* In relation of parent size */
+        left: 50%;
+        top: 50%;
+        /* In relation to ELEMENT size */
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+      }
+      .header-container-inner {
+        width: 50%;
+        background-color: blue;
+      }
+
       h1 {
-        font: size 52px;
+        font-size: 52px;
         margin-bottom: 32px;
       }
       p {
@@ -58,7 +75,7 @@
       }
       h2 {
         font: size 44px;
-        margin: bottom 48px;
+        margin-bottom: 48px;
       }
       section {
         padding: 96px 0;
@@ -72,13 +89,16 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
-        <h1>A healty meal delivered to your door, every single day</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healty algain. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn">Start eating well</a>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
 
